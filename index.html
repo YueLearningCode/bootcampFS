@@ -1,21 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biodata Rasyid Saputra</title>
+    <title>Form Rasyid Saputra</title>
 </head>
 
 <body>
-    <p>Saya sedang belajar HTML dasar</p>
-    <h1>Profil Mahasiswa</h1>
-    <h2>Tentang Saya</h2>
-    <h3>Tentang Saya</h3>
-    <h4>Tentang Saya</h4>
 
-    <a href="https://instagram.com">Instagram</a>
-    <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Trulli" width="500" height="333">
+    <h1>Formulir Pendaftaran</h1>
+
+    <form method="POST" action="">
+
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username">
+        <br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email">
+        <br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password">
+        <br><br>
+
+        <label>Jenis Kelamin:</label><br>
+        <input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki">
+        <label for="laki-laki">Laki-laki</label><br>
+
+        <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+        <label for="perempuan">Perempuan</label>
+        <br><br>
+
+        <label>Hobi:</label><br>
+        <input type="checkbox" id="membaca" name="hobi[]" value="Membaca">
+        <label for="membaca">Membaca</label><br>
+
+        <input type="checkbox" id="olahraga" name="hobi[]" value="Olahraga">
+        <label for="olahraga">Olahraga</label><br>
+
+        <input type="checkbox" id="musik" name="hobi[]" value="Musik">
+        <label for="musik">Musik</label>
+        <br><br>
+
+        <label for="alamat">Alamat:</label><br>
+        <textarea id="alamat" name="alamat" rows="5" cols="40"></textarea>
+        <br><br>
+
+        <label for="jurusan">Jurusan:</label><br>
+        <select id="jurusan" name="jurusan">
+            <option value="sistem_informasi">Sistem Informasi</option>
+            <option value="teknik_informatika">Teknik Informatika</option>
+            <option value="manajemen_informatika">Manajemen Informatika</option>
+            <option value="ilmu_komputer">Ilmu Komputer</option>
+        </select>
+        <br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
 </body>
 
 </html>
